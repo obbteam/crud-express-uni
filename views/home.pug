@@ -1,0 +1,23 @@
+extends layout.pug
+
+block number1
+    if success
+        p.success Your notes have been recieved
+    if deleted
+        p.success You successfully deleted
+    if edited
+        p.success You EDITED succesfully
+    
+    h1 This is app for your notes 
+
+    div.note-list
+        if notes.length
+            each note in notes
+                p.note 
+                    a(href=`/${note.id}`) #{note.description}
+                    span
+                        a(href=`/${note.id}/archive`, class='btn') Archive
+                        a(href=`/${note.id}/update`, class='done btn btn-warning') Update
+                        a(href=`/${note.id}/delete`, class='btn btn-danger') Delete
+        else
+            p.note No any unarchived notes available

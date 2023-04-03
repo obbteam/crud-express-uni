@@ -7,18 +7,18 @@ to run this application locally you must follow steps that are indicated here:
 
 1. Clone this repository 
 bash 
-git clone [repository link ]
+git clone https://github.com/wiut00014485/web_tech_sem2_cw.git
 
 
 2. install dependencies
 bash
-cd [project folder]
+cd 00014485
 npm install 
 
 
 3. run the application 
  bash
- node app
+ node index
 
 
 
@@ -29,4 +29,4 @@ npm install
 
 
 ### web application repository on github
-[link to github repository ]
+https://github.com/wiut00014485/web_tech_sem2_cw.git

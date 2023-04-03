@@ -1,0 +1,12 @@
+extends layout.pug
+
+block number1
+    if notes.length
+        each note in notes
+            h2 Edit this note: #{note.id}
+            form.form(action='/update' method='POST')
+                label(for='name')  Name
+                input.input(required type='text' placeholder=`${note.name}` name='name')
+                label(for='description') Description
+                textarea.input(required name="description", cols="30", rows="10", placeholder=`${note.description}`)
+                button(class='btn btn-success btn-round-1') Change

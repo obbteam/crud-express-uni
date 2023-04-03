@@ -1,0 +1,18 @@
+extends layout
+
+block number1
+    if error
+        p.error Please fill all the inputs
+   
+
+    h2 Here you can create your notes 
+
+    form.form(action='/add' method='POST')
+        label(for='name')  Name
+
+        input.input(type='text' placeholder='Your name' name='name')
+        label(for='description')  Note
+
+        textarea.input(name='description', rows="5", placeholder='Whrite your notes here')
+
+        button(class='btn btn-primary') Create

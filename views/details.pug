@@ -1,0 +1,12 @@
+extends layout.pug
+
+block number1
+    if notes.length 
+            each note in notes
+                h1 #{note.name}
+                div.mypage_txt
+                    p Note description: #{note.description}
+                    p Archived status: #{note.archived}
+                
+    else 
+        h2 You have some troubles here...

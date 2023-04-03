@@ -1,0 +1,14 @@
+extends layout.pug
+
+block number1
+    if isarchived 
+        p.success The note has been archived successfully
+    div.note-list
+        if notes.length
+            each note in notes
+                p.note 
+                    a(href=`/${note.id}`) #{note.description}
+                    span
+                        a(href=`/${note.id}/unarchive`, class='btn btn-primary') Unarchive
+        else
+            p.note No any notes available
