@@ -7,7 +7,7 @@ to run this application locally you must follow steps that are indicated here:
 
 1. Clone this repository 
 bash 
-git clone https://github.com/wiut00014485/web_tech_sem2_cw.git
+git clone https://github.com/wiut00014485/wt_cw2
 
 
 2. install dependencies
@@ -29,4 +29,8 @@ npm install
 
 
 ### web application repository on github
-https://github.com/wiut00014485/web_tech_sem2_cw.git
+https://github.com/wiut00014485/wt_cw2
+
+
+## web page deployed on Glitch
+https://pattern-sweet-manager.glitch.me/
